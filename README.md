@@ -1,7 +1,5 @@
 # CarHire-Database
 
-# Car Hire Database
-
 ## Project Overview
 
 This project provides a **Car Hire Database** designed to manage a fleet of rental cars. The system allows users to create, update, and delete records for individual vehicles in the database. It is intended to facilitate the management of car rental operations, enabling efficient tracking of available cars, their details, and rental statuses.
