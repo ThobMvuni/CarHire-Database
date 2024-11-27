@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HireModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="HireEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCars" EntityType="HireModel.tblCar" />
+  </EntityContainer>
+  <EntityType Name="tblCar">
+    <Key>
+      <PropertyRef Name="VehicleRegNo" />
+    </Key>
+    <Property Name="VehicleRegNo" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Make" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EngineSize" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="DateRegistered" Type="DateTime" />
+    <Property Name="RentalPerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Available" Type="Boolean" />
+  </EntityType>
+</Schema>

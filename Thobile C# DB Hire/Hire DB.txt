@@ -1,0 +1,27 @@
+CREATE DATABASE Hire;
+
+CREATE TABLE tblCar(
+VehicleRegNo Varchar(10) Primary key,
+Make Varchar(50),
+EngineSize Varchar(10),
+DateRegistered DATE, 
+RentalPerDay Money,
+Available  bit);
+
+
+INSERT INTO tblCar(VehicleRegNo,Make,EngineSize,DateRegistered ,RentalPerDay ,Available)
+VALUES('BV557UTR','Mazda','1.6','2007-12-6',90,0),
+	('GH376DRS','Ford','1.6L','2007-4-13',95,1),
+	('GV022JFG','Ford','1.4L','2006-8-23',65,0),
+	('HR483GHT','Honda','1.4L','2006-3-24',75,0),
+	('JK458YGD','Mercedes','1.6L','2007-2-15',120,0),
+	('KR385FWR','Nissan','1.4L','2006-9-10',65,1),
+	('PL324GHT','Nissan','1.2L','2006-8-21',55,0),
+	('PQ127RET','Fiat','1.4L','2007-4-21',80,0),
+	('PR674FHD','Ford','1.2L','2006-8-4',60,0),
+	('RK389TFW','Ford','1.6L','2007-7-19',120,0),
+	('RT543FRD','Fiat','1.4L','2006-8-23',75,0),
+	('TH237TPL','Mercedes','1.6L','2007-1-8',110,1),
+	('YR149HGE','Honda','1.4L','2007-4-19',85,0),
+	('YW903TFY','Honda','1.4L','2006-6-5',70,1),
+	('YZ782HJK','Mercedes', '1.4L','2006-9-12',95,0);

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HireModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="HireModel1StoreContainer">
+    <EntitySet Name="tblCar" EntityType="HireModel1.Store.tblCar" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tblCar">
+    <Key>
+      <PropertyRef Name="VehicleRegNo" />
+    </Key>
+    <Property Name="VehicleRegNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Make" Type="varchar" MaxLength="50" />
+    <Property Name="EngineSize" Type="varchar" MaxLength="10" />
+    <Property Name="DateRegistered" Type="date" />
+    <Property Name="RentalPerDay" Type="money" />
+    <Property Name="Available" Type="bit" />
+  </EntityType>
+</Schema>
